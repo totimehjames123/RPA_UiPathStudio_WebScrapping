@@ -1,0 +1,6 @@
+06/14/2023 00:04:45 => [Debug] Debug started for project: IT_Bricks_Automation
+06/14/2023 00:04:47 => [Info] IT_Bricks_Automation execution started
+06/14/2023 00:04:49 => [Debug] Audit: Using Web App. Browser: Chrome URL: https://rpademo.automationanywhere.com/itbricks_enroll.php
+06/14/2023 00:04:50 => [Debug] Audit: Extract Data. From: <html app='chrome.exe' title='IT Bricks - Holiday Customer Report' />
+06/14/2023 00:04:55 => [Debug] excel
+06/14/2023 00:04:56 => [Info] IT_Bricks_Automation execution ended in: 00:00:09

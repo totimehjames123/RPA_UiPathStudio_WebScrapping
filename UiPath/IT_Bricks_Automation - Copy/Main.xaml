@@ -1,0 +1,300 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="870,4686" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="880,4094" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_WebFormData" />
+      <Variable x:TypeArguments="x:String" Name="variable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Open a  browser&#xA;" AttachMode="ByInstance" DisplayName="Use Browser Chrome: IT Bricks - Holiday Customer Report" sap:VirtualizedContainerService.HintSize="818,416" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="dc4ecc48-74fc-4932-aa40-8a85654ee4fe" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='First Name' ReferenceName='First Name' ReferenceIdx='0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Last Name' ReferenceName='Last Name' ReferenceIdx='1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Company' ReferenceName='Company' ReferenceIdx='2'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Email' ReferenceName='Email' ReferenceIdx='3'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Phone' ReferenceName='Phone' ReferenceIdx='4'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Country' ReferenceName='Country' ReferenceIdx='5'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='First Name' attr='fulltext' /&gt;&lt;column name='Last Name' attr='fulltext' /&gt;&lt;column name='Company' attr='fulltext' /&gt;&lt;column name='Email' attr='fulltext' /&gt;&lt;column name='Phone' attr='fulltext' /&gt;&lt;column name='Country' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="dc4ecc48-74fc-4932-aa40-8a85654ee4fe" Version="V3">
+            <uix:NExtractData.Target>
+              <uix:TargetAnchorable DesignTimeRectangle="364, 287, 654, 369" DesignTimeScaleFactor="1" FriendlyName="'First NameLast'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="131083d7-de5c-42e3-b15d-6274906995f1" InformativeScreenshot="6b55bef8e39847484a5237e079cf2b76.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IT Bricks - Holiday Customer Report' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+            </uix:NExtractData.Target>
+          </uix:NExtractData>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="56b4b25602cb01684c543404e4246479.jpg" Selector="&lt;html app='chrome.exe' title='IT Bricks - Holiday Customer Report' /&gt;" Title="IT Bricks - Holiday Customer Report" Url="https://rpademo.automationanywhere.com/itbricks_enroll.php" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ui:WriteRange AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="818,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="IT_Bricks" StartingCell="A1" WorkbookPath="Data.xlsx" />
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_WebFormData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="818,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="IT_Bricks" WorkbookPath="Data.xlsx" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: IT Bricks - New Holiday Club Signup" sap:VirtualizedContainerService.HintSize="818,3243" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="7dfab9c9-1fb6-44f9-a01e-76bebb15f74c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="784,3026" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_WebFormData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="722,2911" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="688,2794" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="savedStatus" />
+                      <Variable x:TypeArguments="x:String" Name="userSaved" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'First Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="626,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="7dfab9c9-1fb6-44f9-a01e-76bebb15f74c" Text="[CurrentRow(&quot;First Name&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://rpademo.automationanywhere.com/itbricks_crm.php" CvType="InputBox" DesignTimeRectangle="657, 282, 189, 27" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="d382de1a-e59e-4a72-88ed-c76b7acacff7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMEAAAAfCAYAAABedqnDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGHSURBVHhe7duvqgJBGIbxcyuKYFm8CovZLILRsAuCf9EubLW4iGgz2jSIrGabGLwDwSRewHfYYV3OQecCnO/5wdtm2jy4xZ84joUxzSMCpn7WCGazmTQaDalUKlIqlSSXyzHmzIIgyN76WwS73U6azabk8/mPlxn79g0GA+l0OvYIisVidrjVasl2u5Xb7SaAK5IArBH4vm8ef6FQkOPxmF4B3GKNYLFYZJ9Ap9MpPQ64xxpBrVYzAbTb7fQo4CZrBOVy2URwOBzSo4CbrBF4nmciuN/v6VHATdYIkgCSAa4jAqhHBFCPCKAeEUA9IoB6RAD1iADqEQHUIwKoRwRQjwig2vP5NAGMRiMigE7X69VEEIYhEUCn5XJpIoiiiAigz+VyMQH0+33ZbDZEAF2S/8n0ej0TwXw+zwIgAjjt8XjI+XyW1WplHv/rV+BvAMn+RVCv17PDjLm0brcr0+lU9vu9PYJqtfrxMmPfuuFwKOPxWCaTiazX67fH/1oWAWNaRwRM+WL5BQKapa1VwesfAAAAAElFTkSuQmCC" InformativeScreenshot="9bdb5f3f75eb773af2bb17050a40a07c.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IT Bricks - New Holiday Club Signup' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArgument="First Name:" CvType="Text" DesignTimeRectangle="528, 274, 119, 43" ElementType="Text" FriendlyName="'First Name'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='' aaname='First Name:' check:innerText='First Name:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHsAAAAvCAYAAADD2LWeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIuSURBVHhe7ZfLjYMwEIZdGUotoQ22DNJEJGqIlFxyS26pIZtjpD3OYmP8YpAgLwXPj/QdYAbb+PMYUL9/NDiu1ytdLhc6Ho+03+9pt9uBDFDWrznu9zudTic2ESwfJ/t2u9HhcGCTQB4Y2bqiITp/jOzz+cwGQV4o/THGBUB+KP3VzQVAfij9e8UFQH4o/EfLQXEXQZ5AtiAgWxCQLQjIFgRkCwKyBQHZgoBsQcySXa8VKcWwroN4QdWWv/85aipNf3H7zU9hxlBuwlzA8YDscZnPy26FripqxmLJ4tJA9nReKvs5rMwpsgO5kD2d91X2tqJCi1mXVlJJtcvxdJIaqlbhda6PWHa/KIaykzzbr++jpMreY2h3iXBMxU9j2wnv8bkutimZ/O/m/bLdZLfYCYoF9/GJld3GKytHtxPLtm32bbgFpyV5cekC64T15/3zJeOzbTm5MmSnePmsbKYaDOF1w3TZjateX6W+soPcnkj2yHjT88H47f2j4/t+PrCNh1J9NTnc5M2R7Su6h61WtrL9TjNJ9oBgp1oYH5YdEExmtxXOk51Wr5Gd9vkK2WPjXyAflT34mOLe4ZNltwSvhUi2zenG0/KI7DQ/fR4Z7+zHZWvS7TecrDDmFoSDq/xeiM+P2l+1fwJuAc2VHbfftTdcaNnKBssGsgUB2YKAbEFAtiAgWxCQLQjIFgRkCwKyBQHZgoBsQUC2ICBbEJAtCMgWBGQLArIFAdli2NE/teVW4XSX4QIAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Last Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="626,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="7dfab9c9-1fb6-44f9-a01e-76bebb15f74c" Text="[CurrentRow(&quot;Last Name&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://rpademo.automationanywhere.com/itbricks_crm.php" CvType="InputBox" DesignTimeRectangle="657, 327, 189, 27" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="1397174a-2c05-4aa6-a489-18b462a2073e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMEAAAAfCAYAAABedqnDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGGSURBVHhe7duhqgJBGIbhcyuiweJdGOxmEYwGg+C6ytoNRoOIIDajzQ0iu2abGLyDBZN4Af9hhnU5B50LcP73ga/NtnlZEfYnSRJhTPOIgKmfM4LVaiWdTkcajYbUajUplUqMebNer1fc9bcIDoeDdLtdKZfLHx9m7Ns3Ho8lCAJ3BNVqtTjc7/cljmPJskwAX5gAnBGYV4S5/JVKRU6nU/4I4BdnBJvNpvgJdD6f8+OAf5wRtFotG8BgMMiPAn5yRlCv120EaZrmRwE/OSN4/Q16v9/zo4CfnBGYAMwA3xEB1CMCqEcEUI8IoB4RQD0igHpEAPWIAOoRAdQjAqhHBFDt+XzaACaTCRFAp9vtZiOYzWZEAJ3Mx2MmguVySQTQ53q92gBGo5Hs93sigC7mO5kwDG0E6/W6CIAI4LXH4yGXy0W22629/K+3wN8AzP5F0G63i8OM+bThcCiLxUKOx6M7gmaz+fFhxr51URTJdDqV+Xwuu93u7fK/VkTAmNYRAVO+RH4B0HyltmJ/BaIAAAAASUVORK5CYII=" InformativeScreenshot="6d4f663272055d49e5bf7836dc22e7c8.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IT Bricks - New Holiday Club Signup' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArgument="Last Name:" CvType="Text" DesignTimeRectangle="528, 319, 119, 43" ElementType="Text" FriendlyName="'Last Name'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='' aaname='Last Name:' check:innerText='Last Name:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHsAAAAvCAYAAADD2LWeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAILSURBVHhe7ZY7jsJAEER9F87ABXwAYmJShw65BjcgJCMj881mVZZq1bTGWmZlJFtVwROM+zMz/QDRTdNUjAaWLYRlC2HZQli2EJYthGULYdlCWLYQli2EZQth2UJYthCWLYRlC2HZQli2EJYtRJPsy+VSDodDud/v1fi3uF6vpeu6eX8+ez6f5Xg8ltPpVF6v11u+qbMZ2RB6u90WY5Ad97bsdjYhmzL/kg0o17LbWVU2BVAM3uMZYqhBbZYGwXwG4k81ibIBamqyl3rF3PP5/Bsfx3F+xnX8sMVe8c7YCzXxbnthNdkcAodPuajJMQ4SElH76TcbctATfR6Px5ts7lfrSdk8O9c5ToH5fLgDY7wL1/GcW2f1n/E4SBBlY12r/1Q24nw/DMO8D2Uzl6JITWYWltf5nuy5dL69sPo3G0OBEOQgFzWIZwlxeC2y84eJsrkfz1erYe4nstk/gp618+2F1WRnuXkd4TA53BbZcQ0ocCnnv7KX7rlnVpfNgVIoXpeGzTWERFGZLJL1eMYezMEr92NNq2yeB72wX7x3zo3n3DrNsjGETB446Pt+hrEoAMRhxRjz475ZNqAQ5lMC++NfNwRF+TmXZ8jr2J9w71ruXmiSbfaNZQth2UJYthCWLYRlC2HZQli2EJYthGULYdlCWLYQli2EZQth2UJYthCWLYRlC2HZMkzlB5YbddoQOZNmAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Company Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="626,218" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="7dfab9c9-1fb6-44f9-a01e-76bebb15f74c" Text="[CurrentRow(&quot;Company&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://rpademo.automationanywhere.com/itbricks_crm.php" CvType="InputBox" DesignTimeRectangle="657, 372, 189, 27" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="1b2eab06-9340-4397-80ed-0bcf90fd47fe" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMEAAAAfCAYAAABedqnDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGHSURBVHhe7duhqgJBGIbhcyuiwbDehcVsFsFoMAjqKtoNGw0igmwz2jSIrJttYvAOBJN4Af9hhnU5B50LcP73ga/NtnnZLfuTJIkwpnlEwNTPGcFyuZRWqyW1Wk0qlYoUCgXGvFmn08nv+lsE+/1e2u22FIvFjw8z9u0bjUbS7/fdEZTL5fxwt9uV3W4nt9tNAF+YAJwRmFeEufylUknSNM0eAfzijCCO4/wT6HQ6ZccB/zgjaDQaNoBer5cdBfzkjKBardoIjsdjdhTwkzOCIAhsBPf7PTsK+MkZgQnADPAdEUA9IoB6RAD1iADqEQHUIwKoRwRQjwigHhFAPSKAekQA1Z7Ppw1gMpkQAXS6Xq82giiKiAA6mZ/HTASLxYIIoM/lcrEBDIdD2W63RABdzH8yg8HARrBarfIAiABeezwecj6fZb1e28v/egv8DcDsXwTNZjM/zJhPC8NQ5vO5HA4HdwT1ev3jw4x968bjsUynU5nNZrLZbN4u/2t5BIxpHREw5UvkF/2LpbZayCrtAAAAAElFTkSuQmCC" InformativeScreenshot="f820c587cae66bce1f6d2e9c97aab6be.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IT Bricks - New Holiday Club Signup' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArgument="Company Name:" CvType="Text" DesignTimeRectangle="528, 364, 119, 43" ElementType="Text" FriendlyName="'Company Name'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='' aaname='Company Name:' check:innerText='Company Name:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHsAAAAvCAYAAADD2LWeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALVSURBVHhe7ZY9jupQDIXZC2tgAyyAmpqWkpKajpIdUEJFR8fO8nSQvsjvzM2bZISeRrGLT8E/19f2IcwsXq9XV+SgxE5EiZ2IEjsRJXYiSuxElNiJKLETUWInosRORImdiBI7ESV2IkrsRJTYiSixE1FiJ6LETsRksZ/PZ7fZbLrFYtGz2+2auXPh8Xh0q9WqWy6X3fV67f3H4/E9/+Vy+Sv/tzJJbIaW2BJdPg2vJUTf3GBu/2LPWmwNqqE1fCs+V6LYUdzZit16q4dgCb4c/gSozn6/7+P6EglsnVc+d67X6zeK+U+panNOxDdPn5V/OBy+xF2o2Jt/mV1sdjBUg7zYK7nqRX59Vs3T6dTnx916rTgXM7OnsYwWm5/reGkLX0BsLA4gf7RjnCWxZGziCEJPDO13q1dqY3tt5vnXfOTq7u1229/Ruo/e4hn1TS71sT2u53dzxp3S4xg+KjZNMoD71LieLFxx1RuyfWGKsxQWLBge4vJjbT+rOAtt1YXYx+12e38W/DrFM8xLL/ROfQSi55btu447ZA8/4aM/460cGpX/fr/3n5Wr+FSxW0shn4Wy/O/Eptb5fP7SV8T7oA7E+2TrOXTG75bfbeaSHRnqbywf/QcNYaM40adzesYaLki0fWGKx6X5At322h6nvlCe8uV3vA9s1aLeUA62362nbPndRuyhfn7KJLF9APlobMxQiitPNVRL8TFiU8/Pc5eentuq7b2RI5/7I625mYtz5HhvY/bits/p4vvZsUwSW9CILgOaAAYDBvQh5HNBoh2XzD9GMdd7UY7iLMFr0xf9CBYXe3JiH7pTvng39ahFvTir300uvbrts8W7PXcsk8X+n7SW/GlYnH9h50h6sSWyxOaNmzNpxaZ2lrda/Gqxi89SYieixE5EiZ2IEjsRJXYiSuxElNiJKLETUWInosRORImdiBI7ESV2IkrsRJTYaXh1fwDHFJbVPJ7ltgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email Address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="626,218" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="7dfab9c9-1fb6-44f9-a01e-76bebb15f74c" Text="[CurrentRow(&quot;Email&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://rpademo.automationanywhere.com/itbricks_crm.php" CvType="InputBox" DesignTimeRectangle="657, 417, 189, 27" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="36817a7a-394e-4b18-a0c2-85686cdd1f7c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMEAAAAfCAYAAABedqnDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGGSURBVHhe7duhqgJBGIbhcyuiweJdGOxmEYwGg+C6ytoNRoOIIDajzQ0iu2abGLyDBZN4Af9hhnU5B50LcP73ga/NtnlZEfYnSRJhTPOIgKmfM4LVaiWdTkcajYbUajUplUqMebNer1fc9bcIDoeDdLtdKZfLHx9m7Ns3Ho8lCAJ3BNVqtTjc7/cljmPJskwAX5gAnBGYV4S5/JVKRU6nU/4I4BdnBJvNpvgJdD6f8+OAf5wRtFotG8BgMMiPAn5yRlCv120EaZrmRwE/OSN4/Q16v9/zo4CfnBGYAMwA3xEB1CMCqEcEUI8IoB4RQD0igHpEAPWIAOoRAdQjAqhHBFDt+XzaACaTCRFAp9vtZiOYzWZEAJ3Mx2MmguVySQTQ53q92gBGo5Hs93sigC7mO5kwDG0E6/W6CIAI4LXH4yGXy0W22629/K+3wN8AzP5F0G63i8OM+bThcCiLxUKOx6M7gmaz+fFhxr51URTJdDqV+Xwuu93u7fK/VkTAmNYRAVO+RH4B0HyltmJ/BaIAAAAASUVORK5CYII=" InformativeScreenshot="de158d0368a87849e630abd86f88478d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IT Bricks - New Holiday Club Signup' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArgument="Email Address:" CvType="Text" DesignTimeRectangle="528, 409, 119, 43" ElementType="Text" FriendlyName="'Email Address'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='' aaname='Email Address:' check:innerText='Email Address:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHsAAAAvCAYAAADD2LWeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJpSURBVHhe7ZY9jsIwEIVzF87ANaipaSkpqbkBN+AGdHS5WVYv0kOjWTs/KCFC7xWfEttjz3g+lqVp27YzGli2EJYthGULYdlCWLYQli2EZQth2UJYthCWLYRlC2HZQli2EJYthGULYdlCWLYQs2SfTqeuaZp/7Ha77vF4FPd8Cs7DuciJMZ5DeV6vV3c4HPp68MS4FEfu93sfe71ei+uYxzriSuu/yGzZa4gtMVc246d++Cx7hG/KzozlphzEDUkklj3C1IZfLpf3X9l+v+9ut1v/DuJXbPzqBfFsPDFGToyHcvMc5MI6nvmrPObCOagR75T9fD77fZjD83w+9++UzfzH4/G9L9fPWvN5AO+Y4zpiuQaYJ94lxi/BIv+z2VjK5qU5zutsMOJ4KTaHsXNkT4llbjQ1Soq1cE8UFWXH+CyFNZTuluvDmbkWxuYx4pdilb9sXpiXqo1BbDzAO+Zyg4ZyMy/F5DylBsYYzGGNuUtn5vy5PubgGZjH/ngGYW7A/d9gFdm8XGxoacyG4JkbPlV2SST38qySzFhLzgWmykZMhHWU1nlv1hzXYm1rsZnsLOBT2bWmA8azufEDMVQL1vNdarJZ3xA8a6x+9mktNpdNAdw7Vzb3MUdtnmPUQPlxPZ7P2hif1zHOH6BYb+nDhfl819ynWFvcuxSL/EADKLR2CTa0Nga4XK15zJ1lszF5HnA/1hGHOdaP+fxrnGexltqv8VJ+xIGYK6/lvewVyXVsLtv8NpYthGULYdlCWLYQli2EZQth2UJYthCWLYRlC2HZQli2EJYthGULYdlCWLYQli2EZcvQdn92Ebq6uJ+1WQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Phone Number'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="626,218" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="7dfab9c9-1fb6-44f9-a01e-76bebb15f74c" Text="[CurrentRow(&quot;Phone&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://rpademo.automationanywhere.com/itbricks_crm.php" CvType="InputBox" DesignTimeRectangle="657, 462, 189, 27" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='5' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="f4350cbb-b346-47b2-81c5-7eb9ddba7616" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMEAAAAfCAYAAABedqnDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGHSURBVHhe7duhqgJBGIbhcyuiwbDehcVsFsFoMAjqKtoNGw0igmwz2jSIrJttYvAOBJN4Af9hhnU5B50LcP73ga/NtnnZLfuTJIkwpnlEwNTPGcFyuZRWqyW1Wk0qlYoUCgXGvFmn08nv+lsE+/1e2u22FIvFjw8z9u0bjUbS7/fdEZTL5fxwt9uV3W4nt9tNAF+YAJwRmFeEufylUknSNM0eAfzijCCO4/wT6HQ6ZccB/zgjaDQaNoBer5cdBfzkjKBardoIjsdjdhTwkzOCIAhsBPf7PTsK+MkZgQnADPAdEUA9IoB6RAD1iADqEQHUIwKoRwRQjwigHhFAPSKAekQA1Z7Ppw1gMpkQAXS6Xq82giiKiAA6mZ/HTASLxYIIoM/lcrEBDIdD2W63RABdzH8yg8HARrBarfIAiABeezwecj6fZb1e28v/egv8DcDsXwTNZjM/zJhPC8NQ5vO5HA4HdwT1ev3jw4x968bjsUynU5nNZrLZbN4u/2t5BIxpHREw5UvkF/2LpbZayCrtAAAAAElFTkSuQmCC" InformativeScreenshot="4d0638e96d90cf29caf9fcfb67e3ac75.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IT Bricks - New Holiday Club Signup' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArgument="Phone Number:" CvType="Text" DesignTimeRectangle="528, 454, 119, 43" ElementType="Text" FriendlyName="'Phone Number'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='5' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='' aaname='Phone Number:' check:innerText='Phone Number:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHsAAAAvCAYAAADD2LWeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJfSURBVHhe7Zc9bsJQEIR9F87ANaipaSkpqbkBEhUVJR0dnW/maCxNtN48B4OxQzRTfLLf377d/Zwoqeq6bowGli2EZQth2UJYthCWLYRlC2HZQli2EJYthGULYdlCWLYQli2EZQth2UJYthCWLcRTsjebTVNV1Q+Ox2O7frlcmsVi0e7LZ+dmv9+3ucVcbrdbs1wum9Vq1dzv987+d8A72Y9P42nZkAmpGKNhaBznPlF2zNeyC5N9ZNkAhaFAFPqJsgHlWnZhso+hstFQPDGPdzSZ+7mHIuKHwbX1et0KwXrffaW1SJQNcC7LzmOAd+bMGLvdrlPP4XD4jhs/nNL+uM74PBtr51nM8fnuj3OSX+NsFscsKo9zMY/Oxw+L+XAvxpHceNxxvV479+X7WQ9jRgExJvdzzHzy/phvjs3a+s6CnB/nX2X0H2hIGIlj/ZFMFBT3gzj36Dzm43k2E0/GI2we1vi+3W478XJ8gHfMYY3n8Iz39Y25n/nE+OfzuVMb7+Ld+ewUjP41HnlWFohFDjmPvRk2OxLjMg73M16OD/COOaxlAXjG+/I474/xTqdTWxvWI313TcGsslFQSTbnhsj+7f5Ibh7HgPGmlh3j55/sTD47BbPKHruem/tbPrl5FIk5xuMc5fJ+jnOMfH8ec38p3767WGu+C+T6Of8qs8qOe1AY4N6h59lAEpsTKTWPZ/vi8b+AsbKRP558xxqgcK7FPEr5/qls87+xbCEsWwjLFsKyhbBsISxbCMsWwrKFsGwhLFsIyxbCsoWwbCEsWwjLFsKyhbBsISxbhrr5Aji2v+JDQfQ8AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Country'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="626,218" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="7dfab9c9-1fb6-44f9-a01e-76bebb15f74c" Text="[CurrentRow(&quot;Country&quot;).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://rpademo.automationanywhere.com/itbricks_crm.php" CvType="InputBox" DesignTimeRectangle="657, 507, 189, 27" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='6' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='' aaname='' /&gt;" Guid="f5a1c3f9-cfcc-4e93-8b7e-f40feccaba18" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMEAAAAfCAYAAABedqnDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGGSURBVHhe7duhqgJBGIbhcyuiweJdGOxmEYwGg+C6ytoNRoOIIDajzQ0iu2abGLyDBZN4Af9hhnU5B50LcP73ga/NtnlZEfYnSRJhTPOIgKmfM4LVaiWdTkcajYbUajUplUqMebNer1fc9bcIDoeDdLtdKZfLHx9m7Ns3Ho8lCAJ3BNVqtTjc7/cljmPJskwAX5gAnBGYV4S5/JVKRU6nU/4I4BdnBJvNpvgJdD6f8+OAf5wRtFotG8BgMMiPAn5yRlCv120EaZrmRwE/OSN4/Q16v9/zo4CfnBGYAMwA3xEB1CMCqEcEUI8IoB4RQD0igHpEAPWIAOoRAdQjAqhHBFDt+XzaACaTCRFAp9vtZiOYzWZEAJ3Mx2MmguVySQTQ53q92gBGo5Hs93sigC7mO5kwDG0E6/W6CIAI4LXH4yGXy0W22629/K+3wN8AzP5F0G63i8OM+bThcCiLxUKOx6M7gmaz+fFhxr51URTJdDqV+Xwuu93u7fK/VkTAmNYRAVO+RH4B0HyltmJ/BaIAAAAASUVORK5CYII=" InformativeScreenshot="dc6c24c6d50ead00584d65ab808bb3f5.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IT Bricks - New Holiday Club Signup' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArgument="Country:" CvType="Text" DesignTimeRectangle="528, 499, 119, 43" ElementType="Text" FriendlyName="'Country'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='6' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='' aaname='Country:' check:innerText='Country:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHsAAAAvCAYAAADD2LWeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVHhe7ZbBjYMwFETpJR0g0UaKoAWOtJBjrjmlg9y40ZlXk9WsHK9J7CjZrDxzeAL//8GWn23o1nUNRgPLFsKyhbBsISxbCMsWwrKFsGwhLFsIyxbCsoWwbCEsWwjLFsKyhbBsISxbCMsWolr2sixhv9+Hrut+GMcxW2v+F1WyL5dLGIbhKhvSETufz2G3293E3s08z+F4PGZzZpsq2djBkA3pufxfANE4TSy7nmLZuV29BYWQWEwqC1e0EY/z0zRdTwzcs0/WEiy++GTB+Pq+vxKPM+4DMdZ+ctF+gmLZnNRH3+dSmY/y7CetT9scVywPNYghhzbexbZlF1AimxMZ76o0lsrakl2az42LMdTWnEit89JjPFdD2dxJtTKfkc0+weFwuHlemZf+oMWTnMpmrFbmM7JZhzjGiyvq4rwiVbJzO5eTXSozbUPSPZlbzzO/JZtx1OYW371F2ypVsgEnC5NIcrsqzlNM+jxk4K8b96WyueAQw3tOp1NWdtwPn43jlt0QlIqF4CP8m2Zlp5+XXI0aTcrmp8C7+pZmd7b5jWULYdlCWLYQli2EZQth2UJYthCWLYRlC2HZQli2EJYthGULYdlCWLYMa/gC8RMBxgVrzNgAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Register'" sap:VirtualizedContainerService.HintSize="626,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7dfab9c9-1fb6-44f9-a01e-76bebb15f74c" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://rpademo.automationanywhere.com/itbricks_crm.php" CvElementArea="655, 551, 72, 29" CvTextArea="666, 558, 52, 16" CvTextArgument="Register" CvType="Button" DesignTimeRectangle="657, 552, 70, 27" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Register'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='checkFields' tableRow='7' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='checkFields' type='button' tag='INPUT' class='' aaname='Register' check:text='Register' /&gt;" Guid="f38ce6a2-4a39-4c05-86e1-c51dc606fd32" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEoAAAAfCAYAAABAk1s1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK3SURBVGhD7Zixy7lRFMfFwCh/h7JaMRoMJMRgVPIHyGAhi4zKqkSyK5HFhF0GyWT0H9xf31tHx3WfyxuP9+33GD7x3nvuPed83Pt441oul+LLY76insRS1HA4FPV6XVQqFZHP50UqlXIU4XD4xsedqPl8LhqNhkin09oNnEAkEhEul+vGy52obDZ7XdBut8VisRDH41FcLhfHAElGUa1WSwrCaVqtVtpNnIBR1Hg8vl63zWaj3cApGEXVajUpqdPpaBc7CaOocrksRTn5yhFGUfQvwOl00i52EkZRkAR0Cznr9VoEg8HrZgTGMKdb8xPO57MoFoui1+tp5z8B9fSyqGg0eielWq3KBtEoH/8pz4qyquMd2CrKzsJ12Jnv46JwKiipetqm0+nNXCwWk2PqieJxdL0Ph4OM52OmfJhPJpNyDHPYk+rQQXvYIkq9eigGzaApmgd4T41SwdSgKgpxaJByYZ5yqHWY8iEGQkn+I94mSvcw50UCFMkLwzo0jRi1KbySOFUUxqlhjirKlE+NfQT19LIonpSa4UVSs1wkoGuCWH76rETxOdqDnxKq41E+Hks1mqD1bxVFYygKjdKY+glznj1R6jqeR63DlE+NfYRtogCK5M2rMvg8F0NzKEwVpebCOnpmqXOmfGrsI2wVRc3zK0UCAF0DikdjNNdsNq/i1BPF4wCN8+uGGFM+q5qtoD1eEmUH/KTo5j/NnxEFIfSNhL/5NVFjP81+v5eSAoHA74sCePjSJ6dey99kMpnImix/M/+0qL9KPB6XogqFwleUFYPBQEryer1iNBp9RenYbrfC4/FIUaVS6UYScLSo3W4n+v2+yGQyUhDw+Xx3ksCNKPzKSQuchtvtFrlcTsxmsztJ4CoKX9e6Df5n/H6/CIVCIpFIiG63eyeHcxX1xcxX1FMsxT/WgGIxcSa/lAAAAABJRU5ErkJggg==" InformativeScreenshot="eb0d70f1bc6ef57ce4b2a96a65b26da2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IT Bricks - New Holiday Club Signup' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NGetText DisplayName="Get Text 'User information saved.'" sap:VirtualizedContainerService.HintSize="626,157" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="7dfab9c9-1fb6-44f9-a01e-76bebb15f74c" TextString="[savedStatus]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://rpademo.automationanywhere.com/itbricks_crm.php" CvType="AnyWordGroup" DesignTimeRectangle="16, 248, 1350, 21" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'User information saved.'" FullSelectorArgument="&lt;webctrl id='message' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='message' tag='DIV' type='' class='message' /&gt;" Guid="a0fed462-ce70-4b26-9d19-0a242a6e4d9b" InformativeScreenshot="24d8dddab3cd39c70a4493d5f40a2069.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IT Bricks - New Holiday Club Signup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="626,737" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+                      <ueab:ExcelProcessScopeX.Body>
+                        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,650" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,539" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="Data.xlsx">
+                              <ueab:ExcelApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,270" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;IT_Bricks&quot;).Cell(&quot;G2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[savedStatus.ToString]" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ExcelApplicationCard.Body>
+                            </ueab:ExcelApplicationCard>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelProcessScopeX.Body>
+                    </ueab:ExcelProcessScopeX>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="202d455550b89892d47d02d0c7371206.jpg" Selector="&lt;html app='chrome.exe' title='IT Bricks - New Holiday Club Signup' /&gt;" Title="IT Bricks - New Holiday Club Signup" Url="https://rpademo.automationanywhere.com/itbricks_crm.php" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
